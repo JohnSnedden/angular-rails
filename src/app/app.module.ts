@@ -7,18 +7,30 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { AuthService } from './services/auth/auth.service';
 
+import { AppRoutingModule } from './app-routing.module';
+import { ExamplesRoutingModule } from './examples/example-routing.module';
+import { ExamplesModule } from './examples/examples.module';
+
+import { ExampleEditComponent } from './examples/example-edit/example-edit.component';
+import { ExamplesService } from './examples/examples.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    ExamplesRoutingModule,
+    ExamplesModule
   ],
-  providers: [AuthService],
+  providers: [
+    AuthService,
+    ExamplesService
+],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

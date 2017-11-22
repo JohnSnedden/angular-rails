@@ -1,8 +1,23 @@
-<!--The content below is only a placeholder and can be replaced.-->
+<header>
+  <nav>
+    <ul>
+      <li><a routerLink="/">Home</a></li>
+      <li><a routerLink="/examples/">Examples</a></li>
+      <li><a routerLink="/examples/new">Add Example</a></li>
+    </ul>
+  </nav>
+</header>
+
 <div style="text-align:center">
   <h1>
     {{title}}!
   </h1>
 </div>
-
+  
 <app-login></app-login>
+
+<hr>
+
+<!-- <app-examples></app-examples> -->
+
+<router-outlet></router-outlet>
