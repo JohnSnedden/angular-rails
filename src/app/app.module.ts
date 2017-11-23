@@ -13,11 +13,13 @@ import { ExamplesModule } from './examples/examples.module';
 
 import { ExampleEditComponent } from './examples/example-edit/example-edit.component';
 import { ExamplesService } from './examples/examples.service';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
