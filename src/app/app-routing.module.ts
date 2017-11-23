@@ -3,12 +3,12 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { CommonModule } from '@angular/common';
 
-import { ExampleIndexComponent } from './examples/example-index/example-index.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   {
       path: '',
-      component: ExampleIndexComponent
+      component: HomeComponent
   }
 ];
 

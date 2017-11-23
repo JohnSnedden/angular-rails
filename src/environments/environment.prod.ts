@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  apiServer: 'https://angular-rails-api.herokuapp.com/'
 };
